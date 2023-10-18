@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    animation: backgroundAnimation 10s infinite alternate;
+    transition: background-color 1s ease-in-out;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #ff0000;
+        /* Red */
+    }
+
+    25% {
+        background-color: #00ff00;
+        /* Green */
+    }
+
+    50% {
+        background-color: #0000ff;
+        /* Blue */
+    }
+
+    75% {
+        background-color: #ffff00;
+        /* Yellow */
+    }
+
+    100% {
+        background-color: #ff00ff;
+        /* Magenta */
+    }
+}
+
+.container {
+    background-color: #c4c4c4;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="radio"],
+input[type="checkbox"],
+input[type="file"],
+textarea,
+select {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #25005c;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
