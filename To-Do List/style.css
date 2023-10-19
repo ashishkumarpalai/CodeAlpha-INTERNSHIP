@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 60%;
+    margin: 30px auto;
+}
+
+.container .parent {
+    background: #005792;
+    padding: 20px;
+    position: relative;
+}
+
+.container .parent input {
+    width: 98%;
+    padding: 12px;
+    background: #00bbf0;
+    border: none;
+    color: white;
+    font-size: 20px;
+}
+
+.container .parent input:focus {
+    outline: none;
+}
+
+h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pop-msg {
+    position: absolute;
+    width: 20%;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+    right: -22%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.container .parent>span {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 900;
+    font: 50px;
+
+}
+
+.container .parent>span>span {
+    display: block;
+    font-weight: 900;
+    font-size: 50px;
+    color: #009688;
+    transition: transform .2s linear;
+    -webkit-transition: transform .2s linear;
+    -moz-transition: transform .2s linear;
+    -ms-transition: transform .2s linear;
+    -o-transition: transform .2s linear;
+}
+
+.container .parent>span:hover>span {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+}
+
+.container .task-content {
+    width: 100%;
+    padding: 10px;
+    background-color: #eee;
+}
+
+.container .task-content .no-task-msg {
+    width: 100%;
+    display: block;
+    background-color: white;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.container .task-content .task {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 7px 10px;
+    text-transform: capitalize;
+    align-items: center;
+}
+
+.container .task-content .completed .task-text {
+    text-decoration: line-through;
+}
+
+.container .task-content .task:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.container .task-content .task button {
+    border: none;
+    padding: 5px;
+    text-transform: capitalize;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #e91e63d4;
+    color: white;
+}
+
+.container .tasks-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+.container .tasks-info .tasks-num {
+    padding: 0 10px;
+    display: flex;
+}
+
+.container .tasks-info .tasks-num span {
+    display: block;
+    margin-left: 5px;
+    background-color: #e91e63d4;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: white;
+}
+
+.container .tasks-info .tasks-completed {
+    padding: 0 10px;
+    display: flex;
+}
+
+.container .tasks-info .tasks-completed span {
+    display: block;
+    margin-left: 5px;
+    background-color: #3f51b5;
+    padding: 0 5px;
+    border-radius: 5px;
+    color: white;
+}
